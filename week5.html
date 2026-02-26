@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Week 5</title>
+    <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#fff}header{margin-bottom:1rem}#content{padding:1rem;border:1px dashed #ccc;background:#fafafa;min-height:200px}</style>
+  </head>
+  <body>
+    <header>
+      <h1>Week 5</h1>
+      <p>Paste your content below inside the <strong>#content</strong> area.</p>
+    </header>
+    <main>
+      <div id="content">
+        <h2>Structured view</h2>
+        <p>Topics: IAM basics, account types, users, groups and policies — original text preserved below.</p>
+
+        <details>
+          <summary>Original paste (unchanged)</summary>
+          <pre>AWS Identity and Access Management (IAM) enables you to manage access to AWS services
+and resources securely. Using IAM, you can create and manage AWS users and groups, and use
+permissions to allow and deny their access to AWS resources. IAM can also keep our account
+credentials private.
+When we first create an AWS account, it has complete access to all AWS services. This identity
+is called the AWS account root user
+IAM Features:
+Shared access to the AWS account: The main feature of IAM is that it allows you to create
+separate usernames and passwords for individual users or resources and delegate access.
+Multifactor authentication (MFA): IAM supports MFA, in which users provide their username
+and password plus a one-time password from their phone a randomly generated number used
+as an additional authentication factor.
+Identity Federation: If the user is already authenticated, such as through a Facebook or Google
+account, IAM can be made to trust that authentication method and then allow access based on
+it.
+Free to use: There is no additional charge for IAM security. There is no additional charge for
+creating additional users, groups or policies.
+Password policy: The IAM password policy allows you to reset a password or rotate passwords
+remotely.
+Granular permissions: Each user can be granted with different set granular permissions as
+required to perform their job
+
+AWS is supporting two types of accounts
+1. Root User
+2. IAM User
+Root User:
+• Root Account Credentials are the email address and password with which we sign in into
+the AWS account
+• Root Credentials has full unrestricted access to AWS account including the account
+security credentials which include sensitive information
+• An Administrator account can be created for all the activities which too has full access to
+the AWS account except the accounts security credentials, billing information and ability
+to change password
+IAM User:
+• IAM user represents the person or service who uses the access to interact with AWS.
+• IAM user starts with no permissions and is not authorized to perform any AWS actions
+on any AWS resources and should be granted permissions as per the job function
+requirement.
+• Each IAM user is associated with one and only one AWS account.
+• IAM User cannot be renamed from AWS management console and has to be done from
+CLI or SDK tools.
+Stepsto Create IAM User:
+• Create Two IAM user.
+• One user will access only EC2 Machines & Second user will access only S3 Buckets.
+• Go to IAM
+• Click on Users
+• Click on Add Users
+• Enter the user name
+• Select AWS Access Type.
+• We can connect our AWS account with 2 ways.
+• Console Access (Graphical Access)
+• Command Line Interface (CLI)
+• Select custom password & enter the password
+• Uncheck require password reset
+• Click on Next: Permissions
+• Click on Attach existing policies directly
+• Search the EC2 full Access policy
+• Select the policy
+• Click on Next: Tags
+• Click on Next: Review
+• Click on Create user
+• Create Another User Given S3 Full Access
+• Note down the console ID of your root user
+• Go to the AWS URL
+• Select IAM User
+• Enter the Account ID (Console ID)
+• Click on Next
+• Enter IAM user name & password
+• Click on Sign In
+• Change the Password
+IAM Groups and Attach Policies:
+• An IAM Group is a collection of users. Group specifies the permission for a collection of
+users, and it also makes it possible to manage the permissions easily for those users.
+• Following are some important characteristics of user groups:
+• A user group can contain many users, and a user can belong to multiple user groups.
+• User groups can't be nested; they can contain only users, not other user groups.
+• There is no default user group that automatically includes all users in the AWS account.
+If you want to have a user group like that, you must create it and assign each new user
+to it.
+• Default Quota is 300 Groups For an AWS Account & Max quota is 500 Groups
+Steps to Create Groups and attach Policies:
+• Go to IAM
+• Click on User groups
+• Click on Create Group
+• Enter the name of the group
+• Attach Permission policies
+• Search S3Full Access
+• Click on Create Group
+• Create new user with Group
+• Select AWS Access Type
+• Enter password
+• Click on Next: Permissions
+• Select Add user to group
+• Click on Add: Tags
+• Click on Create User
+• Login with User
+• Check the S3 Bucket
+• Remove User & Add User in Group
+• Create One more Group
+• Attach Permissions Policies
+• Search EC2 Read only
+• Create Group
+• Open First Group
+• Select the user
+• Click on Remove users
+• Open Second Group
+• Click on Add Users
+• Select the user & Click on Add users
+• Now check group</pre>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>

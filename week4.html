@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Week 4</title>
+    <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#fff}header{margin-bottom:1rem}#content{padding:1rem;border:1px dashed #ccc;background:#fafafa;min-height:200px}</style>
+  </head>
+  <body>
+    <header>
+      <h1>Week 4</h1>
+      <p>Paste your content below inside the <strong>#content</strong> area.</p>
+    </header>
+    <main>
+      <div id="content">
+        <h2>Structured view</h2>
+        <p>Overview: add and mount a 5GB EBS volume (Linux/Windows). Full original paste preserved below.</p>
+
+        <details>
+          <summary>Original paste (unchanged)</summary>
+          <pre>Launch the Linux Server and then add 5GB of additional Volume
+• One EC2 Machine can have multiple Volumes also & Additional volume is known as
+Elastic Block Store (EBS)
+• Creating Linux EC2 Machine using the multiple Volumes
+• Go to Add Storage
+• Click on Add New Volume
+• Check Delete on Termination
+• Launch the Instance
+• Check Volumes
+• Mount the volume
+• Connect Linux EC2 machine using putty
+• Check disk space usage
+df -hT
+• Check available disk device
+lsblk
+Note down the name of the added ebs volume (xvdb)
+• Information about device
+sudo file -s /dev/xvdb
+• Create file system on the volume
+sudo mkfs -t ext4 /dev/xvdb
+• CreateDirectory
+mkdir test
+• Mount the Volume
+sudo mount /dev/xvdb test
+• Change directory
+cd test
+• Create files
+sudo touch file1 file2 file3
+• Check the files
+ls
+• Check disk space usage
+df –hT
+• Change directory
+cd
+• Unmountthe EBS volume
+sudo umount test
+• Detach Volume
+• Click on Detach
+• Create another Linux ec2 machine with root volume in same availability zone in which
+we have our EBS volume
+• Attach Volume
+• Select the Volume which we want to attach with EC2 Machine
+• Select the instance Click on attach volume
+• Now connect the second ec2 machine using putty
+• Check disk space usage
+df –hT
+• Check available disk device
+lsblk
+Note down the name of the added ebs volume (xvdf)
+• Information about device
+sudo file -s /dev/xvdf
+• Create directory
+mkdir training
+• Mount the Volume
+sudo mount /dev/xvdf training
+• Change directory
+cd training
+• Check the files
+ls
+Launch the Windows Server and then add 5GB of additional Volume
+• Create Windows EC2 Machine with EBS Volume
+• Check the volumes
+• Connect the instance using remote desktop connection Click on start button
+• Open server manager
+• Click on files and storage services
+• Click on disks
+• Select the disk & right click
+• Click on bring online
+• Click on yes
+• Right click on the disk
+• Click on initialize
+• Click on yes
+• Right click on the disk
+• Click on new volume
+• Click on next (Multiple Times)
+• Click on create
+• Now check the windows system
+• Open D Drive & create one file
+• Unmount the volume from ec2 machine
+• Go to Server manager
+• Click on files and storage services
+• Click on disks
+• Right click on EBS disk
+• Click on Take Offline
+• Click on Yes
+• Detach the volume
+• Select the volume
+• Click on Detach
+• Create windows ec2 machine in the same availability zone in which we have our EBS volume
+• Attach the EBS volume with instance
+• Select the instance Click on attach volume
+• Connect the new windows ec2 machine using Remote desktop connection
+• Open server manager
+• Click on file and storage services
+• Click on disks
+• Our ebs disk is showing as offline.
+• Make that disk online
+• Select the ebs disk
+• Right click on ebs disk & click on being online
+• Click on Yes
+• Now check this PC
+• Open D Drive</pre>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>

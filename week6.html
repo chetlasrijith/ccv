@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Week 6</title>
+    <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#fff}header{margin-bottom:1rem}#content{padding:1rem;border:1px dashed #ccc;background:#fafafa;min-height:200px}</style>
+  </head>
+  <body>
+    <header>
+      <h1>Week 6</h1>
+      <p>Paste your content below inside the <strong>#content</strong> area.</p>
+    </header>
+    <main>
+      <div id="content">
+        <h2>Structured view</h2>
+        <p>Topics: S3 overview, features, bucket naming, create/upload, and versioning. Original text preserved below.</p>
+
+        <details>
+          <summary>Original paste (unchanged)</summary>
+          <pre>Simple Storage Service (S3)
+S3 is a secure, durable and highly scalable object storage. S3 is easy to use, with a simple web service
+interface to store and retrieve any amount of data from anywhere on the web. This means customers of
+all sizes and industries can use it to store and protect any amount of data for a range of use cases, such
+as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT
+devices, and big data analytics.
+S3 Features:
+• It is a global service
+• Low latency and high throughput performance
+• It is a Safe place to store your files
+• It is object based storage
+• Durability: AWS claims Amazon S3 to have a 99.999999999% of durability. This means the
+possibility of losing your data stored on S3 is one in a billion.
+• A single Amazon S3 object can store maximum of 5 terabytes. The total volume that an
+s3 bucket can store is unlimited. If an object size is greater than 5 gigabytes, you should
+consider multipart upload.
+• S3 Bucket Names must be unique globally.
+• Lifecycle Management
+• Versioning
+• Encryption
+• Secure Your data using Access Control lists & Bucket Policy
+S3 Restrictions and Limitations:
+• Bucket ownership is not transferable to another account.
+• When we create a bucket, we choose its name and the AWS Region to create it in. After
+we create a bucket, we can't change its name or Region.
+• By default, we can create up to 100 buckets in each of our AWS accounts. If we need
+additional buckets, you can increase our account bucket limit to a maximum of 1,000
+buckets by submitting a service limit increase. There is no difference in performance
+whether you use many buckets or just a few. (Note: Search Service Quotas in AWS)
+S3 Bucket Overview:
+• Amazon S3 Allows people to store objects (Files) in the “buckets” (Directories)
+• Buckets must have a globally unique names
+• Buckets are defined at the region level
+• Naming Convention
+No Uppercase
+No Underscore
+3 – 63 Characters long
+Not an IP Address (224.245.278.135)
+Must start with lowercase letter or number
+S3 Create Bucket:
+• Click on Create Bucket
+• Enter the bucket name
+• Select the region
+• Select ACLs Enabled
+• Uncheck the block all public access
+• Check the acknowledge
+• Click on Create bucket
+S3 Upload Object:
+• Click on the name of the bucket
+• Click on Upload
+• Click on Add files
+• Select the file which we want to upload in our S3 bucket
+• Click on permissions
+• Select grant public read access
+• Click on Upload
+S3 View Object:
+• Click on the name of the object
+• Go to the properties tab
+• Copy the object URL
+• Paste in the browser
+• Change permission of the object
+• Click on the name of the object
+• Go to Permission tab
+• Click on Edit
+• Uncheck read access from public access
+• Click on save changes
+• Paste the object URL in browser
+Versioning:
+Versioning in Amazon S3 is a means of keeping multiple variants of an object in the same
+bucket. We can use the S3 Versioning feature to preserve, retrieve, and restore every version of
+every object stored in our buckets. It is enabled at the bucket level. Versioning- enabled
+buckets can help you recover objects from accidental deletion or overwrite.
+Advantages of Versioning:
+• We can recover deleted object.
+• We can maintain different versions of the file
+Steps for Versioning:
+• Create bucket
+• Select ACLs Enabled
+• Don’t give access to public
+• Click on Create bucket
+• Upload the Object
+• Don’t give any permission
+• Paste the Object URL in Browser
+• Give Public Access to Bucket
+• Open our bucket
+• Go to Permissions tab
+• Click on Edit for block public access
+• Uncheck the Block all public Access
+• Click on save changes
+• Enter confirm & Click on Confirm
+• Now open File
+• Go to Permission tab.
+• Click on edit
+• Check the read check box for public
+• Check the authentication
+• Click on save changes
+• Check the object URL
+Versioning Recover Deleted Object:
+• Open our Bucket
+• Go to properties tab
+• Click on Edit for bucket Versioning
+• Select enable
+• Click on save changes
+• Open our bucket
+• Click on show versions
+• Delete the file
+• Select the file & Click on Delete
+• Enter delete
+• Click on delete objects
+• Click on show versions
+• Select delete marker file & Click on delete
+• Enter permanently delete
+• Click on Delete objects
+Versioning Maintain Different Versions:
+• Add more lines in our existing file
+• Open bucket & Upload the new file
+• Go to Permissions
+• Give Public Access
+• Click on upload
+• Click on show versions
+• Recover Old Version File
+• Select the old version file
+• Click on download
+• System will download the file & if we want then we can upload the file again.</pre>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>

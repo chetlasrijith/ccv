@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Week 1</title>
+    <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#fff}header{margin-bottom:1rem}#content{padding:1rem;border:1px dashed #ccc;background:#fafafa;min-height:200px}</style>
+  </head>
+  <body>
+    <header>
+      <h1>Week 1</h1>
+      <p>Paste your content below inside the <strong>#content</strong> area.</p>
+    </header>
+    <main>
+      <div id="content">
+        <h2>Structured view</h2>
+        <p>The original pasted content is preserved below (click to expand). A simple structured outline is shown here for quick reading.</p>
+
+        <h3>Topics</h3>
+        <ul>
+          <li>EC2 – Introduction</li>
+          <li>Security Group</li>
+          <li>Key Pair</li>
+          <li>Linux Server: launch & connect steps</li>
+          <li>Windows Server: launch & connect steps</li>
+        </ul>
+
+        <details>
+          <summary>Original paste (unchanged)</summary>
+          <pre>EC2 – Introduction
+EC2 stands for Amazon Elastic Compute Cloud. It is a web service that provides secure, scalable
+compute capacity in the cloud. It is a virtual server in Amazon's Elastic Compute Cloud (EC2) for
+running applications on the Amazon Web Services (AWS) infrastructure.
+Amazon EC2 currently supports a variety of operating systems including: Amazon Linux,
+Ubuntu, Windows Server, Red Hat Enterprise Linux, SUSE Linux Enterprise Server, openSUSE
+Leap, Fedora, Fedora CoreOS, Debian, CentOS, Gentoo Linux, Oracle Linux, FreeBSD, and Mac
+OS
+Security Group: A security group acts as a virtual firewall for your EC2 instances to control
+incoming and outgoing traffic. Inbound rules control the incoming traffic to your instance, and
+outbound rules control the outgoing traffic from your instance.
+Key Pair: A key pair, consisting of a public key and a private key, is a set of security credentials
+that you use to prove your identity when connecting to an Amazon EC2 instance. Amazon EC2
+stores the public key on your instance, and you store the private key.
+i.Linux Server
+• Select EC2 Service
+• Click on Launch Instances
+• Enter the Name
+• Choose Amazon Machine Image (AMI) (Amazon Linux)
+• Choose an Instance Type (t2.micro)
+• Click on Create New Key Pair
+• Enter the name
+• Select Key pair type as RSA
+• Select Private Key file format as .pem
+• Click on create Key pair
+• Enable SSH Port
+• Note: For Windows Instance RDP Port Needs to be open &
+• for Linux Instance SSH Port
+• Select Configure storage
+• Click on launch Instances
+• Download Putty & Puttygen
+• Open Website: https://www.chiark.greenend.org.uk/~sgtatham/pu tty/latest.html
+• Generate PPK File Using Puttygen
+• Select the EC2 Machine & Click on connect
+• Go to SSH Client
+• Note down the host name
+• Open putty
+• Enter the Host name
+• Attach PPK File with Putty
+• Click on open
+• Click on Accept
+• Select the EC2 Machine & Click on connect
+• Go to EC2 Instance Connect
+• Note down the Public IPV4 Address
+• Open Putty Enter IP Address
+• Attach PPK File File
+• Click on open
+• Enter User name (ec2-user)
+ii. Windows Server
+• Select Region
+• Select EC2 Service
+• Click on Launch Instances
+• Enter the Name
+• Choose Amazon Machine Image (AMI) (Windows)
+• Choose an Instance Type (t2.micro)
+• Click on Create new key pair
+• Enter the key pair name (Special Character doesn’t work)
+• select Private Key file format as .pem
+• Click on create key pair
+• Check Allow RDP Traffic from
+• Select source as Anywhere
+• Select Configure storage
+• Click on Launch Instances
+• Select the Instance
+• Click on Stop/ Terminate</pre>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>

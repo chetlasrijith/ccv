@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Weeks</title>
+		<style>
+			body { font-family: Arial, Helvetica, sans-serif; display:flex; align-items:center; justify-content:center; min-height:100vh; margin:0; background:#f7f8fb }
+			.container { text-align:center; }
+			h1 { margin-bottom:1rem }
+			.buttons { display:flex; gap:0.5rem; flex-wrap:wrap; justify-content:center }
+			button { padding:0.6rem 1rem; border-radius:6px; border:1px solid #ccd; background:#fff; cursor:pointer; font-weight:600 }
+			button:hover { background:#eef }
+			.note { margin-top:1rem; color:#666; font-size:0.9rem }
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Select a Week</h1>
+			<div class="buttons">
+				<button onclick="openWeek(1)">Week 1</button>
+				<button onclick="openWeek(2)">Week 2</button>
+				<button onclick="openWeek(3)">Week 3</button>
+				<button onclick="openWeek(4)">Week 4</button>
+				<button onclick="openWeek(5)">Week 5</button>
+				<button onclick="openWeek(6)">Week 6</button>
+				<button onclick="openWeek(7)">Week 7</button>
+			</div>
+			<div class="note">Each button opens a new page where you can paste content.</div>
+		</div>
+
+		<script>
+			function openWeek(n){
+				window.open('week' + n + '.html', '_blank');
+			}
+		</script>
+	</body>
+</html>

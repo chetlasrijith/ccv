@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Week 3</title>
+    <style>body{font-family:Arial,Helvetica,sans-serif;margin:20px;background:#fff}header{margin-bottom:1rem}#content{padding:1rem;border:1px dashed #ccc;background:#fafafa;min-height:200px}</style>
+  </head>
+  <body>
+    <header>
+      <h1>Week 3</h1>
+      <p>Paste your content below inside the <strong>#content</strong> area.</p>
+    </header>
+    <main>
+      <div id="content">
+        <h2>Structured view</h2>
+        <p>Outline: setup Linux Apache (httpd) or Windows IIS as a web server. Commands and steps are below in the original paste.</p>
+
+        <details>
+          <summary>Original paste (unchanged)</summary>
+          <pre>Launch the Amazon Linux Server from AWS and make as Web Server.
+A Web server is a program that uses HTTP (Hypertext Transfer Protocol) to serve the files that
+from Web pages to users, in response to their request.
+Example of Webservers
+• Apache HTTP Server
+• Internet Information Services (IIS)
+• NGINX
+• HTTPD by Apache
+HTTPD: HTTP Daemon is a software program that runs in the background as a web server. It
+waits for the incoming server requests. The daemon answers the request and serves the
+hypertext and multimedia documents over the Internet using HTTP.
+Linux Web Server:
+We will install HTTPD by Apache & it will be the Two Step Process
+Step 1: Update the YUM Repository
+Step 2: Install Web Package
+• Create Linux EC2 Machine
+• Connect the Linux EC2 Machine
+• Switch User to root
+sudo su
+• Update the YUM Repository
+yum update –y
+• Install Web Package
+yum install httpd –y
+• Move to the html Directory
+cd /var/www/html
+• Create web Page
+echo “Amazon Web Services” > index.html
+• Start web package
+service httpd
+start chkconfig httpd on
+• Now, Our Linux machine is webserver.
+• Copy the Public IP & paste in Web Browser
+• Select our Security group
+• Edit Inbound Rules
+• Click on Add Rule.
+• Change type to HTTP & Source as Anywhere IPV4
+• Click on Save rules
+• Now Refresh the Web browser
+Repository: A Linux repository is a storage location from which your system retrieves and
+installs OS updates and applications.
+We need to install web package, it is called web server. Package is nothing but software.
+YUM Repository: YUM Repositories are warehouses of Linux software. Sometimes the software
+we want to install is not available in Linux OS default. In such situations, we can use YUM
+Repositories. We can install new software on Linux with “yum install packagename" command
+from console.
+Launch the Windows Server from AWS and make as Web Server.
+• Create One Windows EC2 Machine
+• Generate the password
+• Connect the EC2 Machine using the RDP
+• Click on Start Menu
+• Open Server Manager
+• Install Internet Information Services (IIS)
+• Click on Add roles and features
+• Click on ok
+• Click on Next
+• Click on Next
+• Click on Next
+• Check Web Server (IIS)
+• Click on Add Features
+• Click on Next
+• Click on Next
+• Click on Next
+• Click on Next
+• Click on Install
+• Check localhost
+• Create own page
+• Go to the path C:\inetpub\wwwroot
+• Create Index.html file in the same path
+• HTML Code:
+ h1 Amazon Web Services h1
+• Enable HTTP Port
+• Click on Security Group ID
+• Click on Edit inbound rules
+• Click on Add rule
+• Select type as HTTP & Source Anywhere IPV4
+• Click on save rules
+• Copy the Public IP and Paste in browser</pre>
+        </details>
+      </div>
+    </main>
+  </body>
+</html>
