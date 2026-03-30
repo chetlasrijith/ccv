@@ -25,6 +25,7 @@
 				<button onclick="openWeek(5)">Week 5</button>
 				<button onclick="openWeek(6)">Week 6</button>
 				<button onclick="openWeek(7)">Week 7</button>
+				<button onclick="openFullPDF()">FULL PDF</button>
 			</div>
 			<div class="note">Each button opens a new page where you can paste content.</div>
 		</div>
@@ -32,6 +33,10 @@
 		<script>
 			function openWeek(n){
 				window.open('week' + n + '.html', '_blank');
+			}
+
+			function openFullPDF(){
+				window.open('ccv.pdf', '_blank');
 			}
 		</script>
 	</body>
